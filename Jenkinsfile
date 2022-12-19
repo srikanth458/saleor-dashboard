@@ -11,7 +11,7 @@ pipeline {
         }
         stage('docker image build') {
             steps {
-                sh 'docker image build -t srikanth458/images:image .'
+                sh 'docker image build -t image .'
             }
         }
         stage('push image to registry') {
