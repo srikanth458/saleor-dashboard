@@ -11,7 +11,7 @@ pipeline {
         }
         stage('docker image build') {
             steps {
-                sh 'docker image build -t shaikkhajaibrahim/saleor-dashboar:DEV .'
+                sh 'docker image build -t image1 .'
             }
         }
         stage('push image to registry') {
