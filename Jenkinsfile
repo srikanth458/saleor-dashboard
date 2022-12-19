@@ -16,7 +16,7 @@ pipeline {
         }
         stage('push image to registry') {
             steps {
-                sh 'docker image push srikanth458/images:DEV'
+                sh 'docker image push srikanth458/images:JDEV'
             }
         }
     }
