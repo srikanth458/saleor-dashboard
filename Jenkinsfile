@@ -11,12 +11,12 @@ pipeline {
         }
         stage('docker image build') {
             steps {
-                sh 'docker image build -t image .'
+                sh 'docker image build -t srikanth458/saleor-dashboard:DEV .'
             }
         }
         stage('push image to registry') {
             steps {
-                sh 'docker image push srikanth458/images:image'
+                sh 'docker image push srikanth458/saleor-dashboard:DEV'
             }
         }
     }
