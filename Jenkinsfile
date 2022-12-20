@@ -11,12 +11,12 @@ pipeline {
         }
         stage('docker image build') {
             steps {
-                sh 'docker image build -t srikanth458/images:DEV .'
+                sh 'docker image build -t srikanth458/image:DEV1 .'
             }
         }
         stage('push image to registry') {
             steps {
-                sh 'docker image push srikanth458/images:DEV'
+                sh 'docker image push srikanth458/image:DEV1'
             }
         }
     }
